@@ -5,7 +5,33 @@ InterfaceOptions_AddCategory(panel)     -- see InterfaceOptions API
 -- add widgets to the panel as desired
 local title = panel:CreateFontString("ARTWORK", nil, "GameFontNormalLarge")
 title:SetPoint("TOP")
-title:SetText("MyAddOn")
+title:SetText("Aoe Helper")
+
+-- Create the scrolling parent frame and size it to fit inside the texture
+-- local scrollFrame = CreateFrame("ScrollFrame", nil, panel, "UIPanelScrollFrameTemplate")
+-- scrollFrame:SetPoint("TOPLEFT", 3, -4)
+-- scrollFrame:SetPoint("BOTTOMRIGHT", -27, 4)
+
+-- Create the scrolling child frame, set its width to fit, and give it an arbitrary minimum height (such as 1)
+-- local scrollChild = CreateFrame("Frame")
+-- scrollFrame:SetScrollChild(scrollChild)
+-- scrollChild:SetWidth(InterfaceOptionsFramePanelContainer:GetWidth()-18)
+-- scrollChild:SetHeight(1) 
+
+-- local footer = scrollChild:CreateFontString("ARTWORK", nil, "GameFontNormal")
+-- footer:SetPoint("TOP", 0, -5000)
+-- footer:SetText("This is 5000 below the top, so the scrollChild automatically expanded.")
+
+
+
+
+local btn = CreateFrame("Button", nil, panel, "UIPanelButtonTemplate")
+btn:SetPoint("TOPLEFT", 0, -40)
+btn:SetText("Add Macro")
+btn:SetWidth(100)
+btn:SetScript("OnClick", function()
+	setMacro()
+end)
 
 
 

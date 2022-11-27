@@ -30,4 +30,7 @@ function flashMessage(message)
     flashOutHoldTime = 0.5
 
     UIFrameFlash(frame, fadeInTime, fadeOutTime, flashDuration, showWhenDone, flashInHoldTime, flashOutHoldTime)
+    print(message)
 end
+
+    
