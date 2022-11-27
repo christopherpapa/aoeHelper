@@ -1,0 +1,8 @@
+## Interface: 80200
+## Title: AoE Helper
+## Author: Christopher Papa
+## Version: 1.0
+
+main.lua
+options.lua
+commands.lua
